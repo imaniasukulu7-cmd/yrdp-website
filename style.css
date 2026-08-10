@@ -1,0 +1,1040 @@
+/* =========================================================
+   YRDP WEBSITE — MAIN STYLESHEET
+   ========================================================= */
+
+
+/* =========================================================
+   1. RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #172b3a;
+    background: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* =========================================================
+   2. GLOBAL CONTAINER
+   ========================================================= */
+
+.container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   3. TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 4.8rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+p {
+    color: #5b6872;
+}
+
+
+/* =========================================================
+   4. SECTION LABEL
+   ========================================================= */
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #e59b00;
+}
+
+
+/* =========================================================
+   5. SECTION HEADINGS
+   ========================================================= */
+
+.section-heading {
+    max-width: 760px;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    margin-bottom: 18px;
+}
+
+.section-heading h2 span,
+.page-hero h1 span,
+.cta-content h2 span,
+.about-content h2 span {
+    color: #e59b00;
+}
+
+
+/* =========================================================
+   6. NAVIGATION
+   ========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.navbar {
+    position: relative;
+}
+
+.nav-container {
+    min-height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    text-decoration: none;
+
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 0.92rem;
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #e59b00;
+}
+
+
+/* NAV BUTTON */
+
+.nav-button {
+    padding: 11px 18px;
+
+    border-radius: 6px;
+
+    color: #ffffff !important;
+    background: #172b3a;
+}
+
+.nav-button:hover {
+    background: #e59b00;
+}
+
+
+/* =========================================================
+   7. BUTTONS
+   ========================================================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 24px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.25s ease;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background: #e59b00;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    background: #c98500;
+}
+
+.btn-secondary {
+    color: #172b3a;
+    background: #ffffff;
+
+    border: 1px solid #172b3a;
+}
+
+.btn-secondary:hover {
+    color: #ffffff;
+    background: #172b3a;
+}
+
+.text-link {
+    color: #e59b00;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   8. PAGE HERO
+   ========================================================= */
+
+.page-hero {
+    padding: 110px 0 100px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5f7f8,
+            #ffffff
+        );
+}
+
+.page-hero .container {
+    max-width: 900px;
+}
+
+.page-hero h1 {
+    margin-bottom: 25px;
+}
+
+.page-hero p {
+    max-width: 720px;
+    font-size: 1.08rem;
+}
+
+
+/* =========================================================
+   9. CTA SECTION
+   ========================================================= */
+
+.cta-section {
+    padding: 100px 0;
+
+    text-align: center;
+
+    background: #172b3a;
+}
+
+.cta-content {
+    max-width: 800px;
+}
+
+.cta-content .section-label {
+    color: #f2b233;
+}
+
+.cta-content h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.cta-content p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+
+    color: #d5dde2;
+}
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   10. ABOUT / IMAGE SECTIONS
+   ========================================================= */
+
+.about-preview {
+    padding: 90px 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.about-content h2 {
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 18px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 450px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+}
+
+
+/* =========================================================
+   11. PROGRAM CARDS
+   ========================================================= */
+
+.programs-section {
+    padding: 90px 0;
+
+    background: #f7f8f9;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.program-card {
+    padding: 32px;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 30px rgba(20, 35, 51, 0.07);
+
+    transition: 0.25s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-number {
+    display: inline-block;
+
+    margin-bottom: 22px;
+
+    font-size: 1.3rem;
+    font-weight: 800;
+
+    color: #e59b00;
+}
+
+.program-card h3 {
+    margin-bottom: 12px;
+}
+
+.program-card p {
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   12. NEWS
+   ========================================================= */
+
+.news-section {
+    padding: 90px 0;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.news-card {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 30px rgba(20, 35, 51, 0.08);
+}
+
+.news-card-image img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.news-card-content {
+    padding: 28px;
+}
+
+.news-card-content h3 {
+    margin: 10px 0 12px;
+}
+
+.news-card-content p {
+    margin-bottom: 18px;
+}
+
+.news-date {
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #e59b00;
+}
+
+
+/* =========================================================
+   13. FEATURED NEWS
+   ========================================================= */
+
+.featured-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.featured-news-image img {
+    width: 100%;
+    min-height: 400px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+}
+
+.featured-news-content h3 {
+    margin: 10px 0 20px;
+}
+
+.featured-news-content p {
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   14. GALLERY
+   ========================================================= */
+
+.gallery-section {
+    padding: 90px 0;
+}
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-auto-rows: 280px;
+
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+
+    overflow: hidden;
+
+    margin: 0;
+
+    border-radius: 14px;
+
+    background: #eeeeee;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item figcaption {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 20px;
+
+    color: #ffffff;
+    font-weight: 700;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0, 0, 0, 0.75)
+        );
+}
+
+.gallery-large {
+    grid-column: span 2;
+}
+
+.gallery-tall {
+    grid-row: span 2;
+}
+
+
+/* =========================================================
+   15. PARTNERSHIP
+   ========================================================= */
+
+.partner-section {
+    padding: 90px 0;
+}
+
+.partner-benefits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.partner-benefit {
+    padding: 30px 25px;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 30px rgba(20, 35, 51, 0.08);
+}
+
+.partner-benefit > span {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 1.5rem;
+    font-weight: 800;
+
+    color: #e59b00;
+}
+
+.partner-benefit h3 {
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   16. FOOTBALL / IMAGE SPLIT
+   ========================================================= */
+
+.football-section {
+    padding: 90px 0;
+}
+
+.football-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+.football-content h2 {
+    margin-bottom: 20px;
+}
+
+.football-content p {
+    margin-bottom: 18px;
+}
+
+.football-image img {
+    width: 100%;
+    height: 430px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+}
+
+
+/* =========================================================
+   17. CONTACT
+   ========================================================= */
+
+.contact-form-section {
+    padding: 90px 0;
+}
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+.contact-intro h2 {
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    margin-top: 35px;
+}
+
+.contact-details > div {
+    margin-bottom: 25px;
+}
+
+.contact-details strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-details p {
+    margin: 0;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: #e59b00;
+    font-weight: 600;
+}
+
+
+/* CONTACT FORM */
+
+.contact-form {
+    padding: 40px;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 30px rgba(20, 35, 51, 0.08);
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color: #172b3a;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+
+    border-color: #e59b00;
+}
+
+.contact-form .btn {
+    border: none;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   18. FOOTER
+   ========================================================= */
+
+.site-footer {
+    background: #101f2b;
+    color: #ffffff;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.5fr
+        1fr
+        1fr
+        1fr;
+
+    gap: 50px;
+
+    padding: 70px 0;
+}
+
+.footer-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+.footer-logo img {
+    width: 48px;
+    height: 48px;
+
+    object-fit: contain;
+}
+
+.footer-column > p {
+    color: #b9c5cc;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+
+    color: #ffffff;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #c7d1d7;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: #f2b233;
+}
+
+.footer-column address {
+    font-style: normal;
+}
+
+.footer-column address p {
+    margin-bottom: 12px;
+    color: #c7d1d7;
+}
+
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom-content {
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.footer-bottom p {
+    color: #9eabb3;
+    font-size: 0.85rem;
+}
+
+.footer-bottom-content div {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom-content a {
+    color: #9eabb3;
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   19. MOBILE MENU
+   ========================================================= */
+
+.menu-toggle {
+    display: none;
+
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    padding: 8px;
+}
+
+.menu-toggle span {
+    display: block;
+
+    width: 25px;
+    height: 3px;
+
+    margin: 5px 0;
+
+    border-radius: 3px;
+
+    background: currentColor;
+}
+
+
+/* =========================================================
+   20. TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .partner-benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   21. MOBILE NAVIGATION
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 15px 20px;
+
+        background: #ffffff;
+
+        box-shadow:
+            0 10px 25px rgba(0, 0, 0, 0.08);
+
+        list-style: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        display: block;
+
+        padding: 12px 10px;
+    }
+
+    .nav-button {
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .about-grid,
+    .football-grid,
+    .featured-news,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .programs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   22. SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .page-hero {
+        padding: 75px 0;
+    }
+
+    .programs-grid,
+    .news-grid,
+    .partner-benefits {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: 260px;
+    }
+
+    .gallery-large,
+    .gallery-tall {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .about-image img,
+    .football-image img {
+        height: 300px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom-content {
+        padding: 20px 0;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
