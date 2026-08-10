@@ -1038,3 +1038,91 @@ p {
     }
 
 }
+/* =========================================================
+   ABOUT US — MISSION, VISION & VALUES
+   ========================================================= */
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.highlight {
+    padding: 25px;
+    background: #f7f8f9;
+    border-left: 4px solid #e59b00;
+    border-radius: 8px;
+}
+
+.highlight h3 {
+    margin-bottom: 10px;
+    color: #172b3a;
+}
+
+.highlight p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   CORE VALUES
+   ========================================================= */
+
+.values-section {
+    padding: 90px 0;
+    background: #f7f8f9;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.value-card {
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(20, 35, 51, 0.06);
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 35px rgba(20, 35, 51, 0.10);
+}
+
+.value-card h3 {
+    margin-bottom: 12px;
+    color: #172b3a;
+}
+
+.value-card p {
+    margin: 0;
+}
+
+
+/* =========================================================
+   ABOUT US MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
