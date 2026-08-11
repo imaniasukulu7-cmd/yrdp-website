@@ -1274,3 +1274,22 @@ p {
     }
 
 }
+/* PROGRAM CARD IMAGES */
+
+.program-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+    margin: -35px -30px 25px;
+    width: calc(100% + 60px);
+    border-radius: 12px 12px 0 0;
+}
+
+@media (max-width: 600px) {
+
+    .program-card img {
+        height: 190px;
+    }
+
+}
