@@ -940,3 +940,53 @@ textarea {
     }
 
 }
+/* =========================================================
+   YRDP HOME PAGE HERO FIX
+   ========================================================= */
+
+body {
+    background: #ffffff;
+}
+
+.site-header {
+    background: #172b3a !important;
+}
+
+.navbar {
+    background: #172b3a !important;
+}
+
+.logo {
+    color: #ffffff !important;
+}
+
+.nav-links a {
+    color: #ffffff !important;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #e59b00 !important;
+}
+
+.menu-toggle span {
+    background: #ffffff !important;
+}
+
+/* Home page main hero */
+section.hero {
+    background: #172b3a !important;
+    color: #ffffff !important;
+}
+
+section.hero h1 {
+    color: #ffffff !important;
+}
+
+section.hero h1 span {
+    color: #e59b00 !important;
+}
+
+section.hero p {
+    color: #ffffff !important;
+}
