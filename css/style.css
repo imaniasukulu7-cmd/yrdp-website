@@ -221,41 +221,38 @@ textarea {
 }
 
 /* =========================================================
-   5. HOME HERO
-   ========================================================= */
+4. PAGE HERO
+========================================================= */
 
-.hero {
-    min-height: 620px;
-    display: flex;
-    align-items: center;
-    position: relative;
+.page-hero {
+    padding: 90px 0;
     background: #172b3a;
     color: #ffffff;
 }
 
-.hero-content {
+.page-hero h1 {
+    max-width: 850px;
+    margin: 12px 0 18px;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.page-hero h1 span {
+    color: #ffffff;
+}
+
+.page-hero p {
     max-width: 760px;
-}
-
-.hero h1 {
-    margin: 15px 0 20px;
-    font-size: clamp(2.5rem, 6vw, 4.8rem);
-    line-height: 1.05;
-}
-
-.hero p {
-    max-width: 680px;
-    margin-bottom: 28px;
-    font-size: 1.08rem;
+    font-size: 1.05rem;
     line-height: 1.8;
+    color: #ffffff;
 }
 
-.hero-actions {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+.page-hero .section-label,
+.page-hero .section-tag {
+    color: #e59b00;
 }
-
 
 /* =========================================================
    6. ABOUT
