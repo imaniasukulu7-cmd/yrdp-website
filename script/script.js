@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     const menuToggle =
         document.getElementById("menu-toggle");
 
@@ -23,9 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         });
 
-
-        /* Close menu after clicking a link */
-
         const links =
             navLinks.querySelectorAll("a");
 
@@ -47,12 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-
-
-    /* ==========================================
-       CURRENT YEAR
-       ========================================== */
-
     const yearElements =
         document.querySelectorAll(".current-year");
 
@@ -63,12 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
             new Date().getFullYear();
 
     });
-
-
-
-    /* ==========================================
-       SMOOTH SCROLLING
-       ========================================== */
 
     const anchorLinks =
         document.querySelectorAll(
@@ -108,6 +92,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     });
-
 
 });
