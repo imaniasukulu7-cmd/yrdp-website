@@ -1239,3 +1239,158 @@ section.hero p {
     }
 
 }
+/* =========================================================
+   OUR WORK PAGE — ADDITIONAL STYLING
+========================================================= */
+
+/* Our Work introduction */
+
+.work-intro {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.work-intro .section-heading {
+    margin-bottom: 0;
+}
+
+.work-intro .section-heading h2 {
+    color: #172b3a;
+}
+
+
+/* Program cards */
+
+.program-card {
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(20, 35, 51, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(20, 35, 51, 0.12);
+}
+
+.program-card img {
+    display: block;
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.program-number {
+    display: block;
+    margin: 22px 25px 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #e59b00;
+}
+
+.program-card h3 {
+    margin: 0 25px 10px;
+    color: #172b3a;
+    font-size: 1.25rem;
+    line-height: 1.35;
+}
+
+.program-card p {
+    margin: 0;
+    padding: 0 25px 28px;
+    color: #596773;
+    line-height: 1.7;
+}
+
+
+/* Who We Work With */
+
+.beneficiaries-section {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.beneficiary-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.beneficiary-item {
+    padding: 28px 22px;
+    background: #f7f8f9;
+    border-radius: 12px;
+    border-top: 4px solid #e59b00;
+}
+
+.beneficiary-item h3 {
+    margin-bottom: 10px;
+    color: #172b3a;
+    font-size: 1.1rem;
+}
+
+.beneficiary-item p {
+    margin: 0;
+    color: #596773;
+    line-height: 1.7;
+}
+
+
+/* Where We Work */
+
+.location-section {
+    padding: 90px 0;
+    background: #f7f8f9;
+}
+
+.location-content {
+    max-width: 800px;
+}
+
+.location-content h2 {
+    margin: 12px 0 18px;
+    color: #172b3a;
+    font-size: 2.2rem;
+    line-height: 1.25;
+}
+
+.location-content p {
+    max-width: 700px;
+    margin: 0;
+    color: #596773;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   OUR WORK — RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .beneficiary-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .work-intro,
+    .beneficiaries-section,
+    .location-section {
+        padding: 65px 0;
+    }
+
+    .beneficiary-list {
+        grid-template-columns: 1fr;
+    }
+
+    .location-content h2 {
+        font-size: 1.9rem;
+    }
+
+}
