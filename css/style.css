@@ -2,6 +2,7 @@
    YRDP WEBSITE — MAIN STYLESHEET
    ========================================================= */
 
+
 /* =========================================================
    1. RESET
    ========================================================= */
@@ -48,7 +49,8 @@ textarea {
     margin: 0 auto;
 }
 
-.section-tag {
+.section-tag,
+.section-label {
     display: inline-block;
     font-size: 0.78rem;
     font-weight: 700;
@@ -67,6 +69,11 @@ textarea {
     margin: 12px 0;
     font-size: 2.2rem;
     line-height: 1.25;
+    color: #172b3a;
+}
+
+.section-heading h2 span {
+    color: #e59b00;
 }
 
 .section-heading p {
@@ -90,6 +97,22 @@ textarea {
 .btn:hover {
     transform: translateY(-2px);
     opacity: 0.92;
+}
+
+.btn-primary {
+    background: #e59b00;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background: transparent;
+    color: #172b3a;
+    border: 2px solid #172b3a;
+}
+
+.btn-secondary:hover {
+    background: #172b3a;
+    color: #ffffff;
 }
 
 
@@ -206,13 +229,13 @@ textarea {
 .page-hero h1 {
     max-width: 850px;
     margin: 12px 0 18px;
-    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-size: clamp(2.5rem, 5vw, 4rem);
     line-height: 1.1;
     color: #ffffff;
 }
 
 .page-hero h1 span {
-    color: #ffffff;
+    color: #e59b00;
 }
 
 .page-hero p {
@@ -220,11 +243,6 @@ textarea {
     font-size: 1.05rem;
     line-height: 1.8;
     color: #ffffff;
-}
-
-.page-hero .section-label,
-.page-hero .section-tag {
-    color: #e59b00;
 }
 
 
@@ -235,12 +253,12 @@ textarea {
 .hero {
     width: 100%;
     min-height: 620px;
+    background: #172b3a;
+    color: #ffffff;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: #172b3a !important;
-    color: #ffffff !important;
 }
 
 .hero .container {
@@ -260,7 +278,7 @@ textarea {
 .hero-label {
     display: block;
     margin-bottom: 24px;
-    color: #ffffff !important;
+    color: #ffffff;
     font-size: 0.9rem;
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -270,7 +288,7 @@ textarea {
 .hero h1 {
     margin: 0 0 25px;
     max-width: 700px;
-    color: #ffffff !important;
+    color: #ffffff;
     font-size: clamp(3.5rem, 7vw, 5.2rem);
     font-weight: 700;
     line-height: 0.98;
@@ -278,13 +296,13 @@ textarea {
 }
 
 .hero h1 span {
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 .hero p {
     max-width: 700px;
     margin: 0;
-    color: #ffffff !important;
+    color: #ffffff;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.9;
@@ -300,11 +318,12 @@ textarea {
 
 
 /* =========================================================
-   6. ABOUT
+   6. ABOUT PAGE — WHO WE ARE
    ========================================================= */
 
-.about-section {
+.about-preview {
     padding: 90px 0;
+    background: #ffffff;
 }
 
 .about-grid {
@@ -316,35 +335,27 @@ textarea {
 
 .about-image {
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 14px;
 }
 
 .about-image img {
     display: block;
     width: 100%;
-    height: 430px;
+    height: 500px;
     object-fit: cover;
 }
 
 .about-content h2 {
     margin: 12px 0 18px;
     font-size: 2.4rem;
+    line-height: 1.2;
+    color: #172b3a;
 }
 
 .about-content p {
     margin-bottom: 18px;
     line-height: 1.8;
     color: #596773;
-}
-
-
-/* =========================================================
-   7. ABOUT PAGE
-   ========================================================= */
-
-.about-preview {
-    padding: 90px 0;
-    background: #ffffff;
 }
 
 .about-highlights {
@@ -372,6 +383,11 @@ textarea {
     line-height: 1.7;
 }
 
+
+/* =========================================================
+   7. VALUES
+   ========================================================= */
+
 .values-section {
     padding: 90px 0;
     background: #f7f8f9;
@@ -389,6 +405,12 @@ textarea {
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(20, 35, 51, 0.07);
     border-top: 4px solid #e59b00;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(20, 35, 51, 0.11);
 }
 
 .value-card h3 {
@@ -397,45 +419,6 @@ textarea {
 }
 
 .value-card p {
-    margin: 0;
-    color: #596773;
-    line-height: 1.7;
-}
-
-.approach-section {
-    padding: 90px 0;
-    background: #ffffff;
-}
-
-.approach-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-}
-
-.approach-card {
-    padding: 28px 22px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(20, 35, 51, 0.07);
-    text-align: center;
-    border-top: 4px solid #e59b00;
-}
-
-.approach-icon {
-    margin-bottom: 15px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #e59b00;
-}
-
-.approach-card h3 {
-    margin-bottom: 10px;
-    color: #172b3a;
-}
-
-.approach-card p {
     margin: 0;
     color: #596773;
     line-height: 1.7;
@@ -478,13 +461,14 @@ textarea {
     object-fit: cover;
 }
 
-.program-card-content {
+.program-card-content,
+.program-content {
     padding: 25px;
 }
 
 .program-number {
     display: block;
-    margin: 22px 25px 8px;
+    margin-bottom: 10px;
     font-size: 0.78rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -492,67 +476,73 @@ textarea {
 }
 
 .program-card h3 {
-    margin: 0 25px 10px;
+    margin-bottom: 10px;
     color: #172b3a;
     font-size: 1.25rem;
     line-height: 1.35;
 }
 
 .program-card p {
+    color: #596773;
+    line-height: 1.7;
+}
+
+.program-content h3 {
+    margin-bottom: 10px;
+    color: #172b3a;
+}
+
+.program-content p {
     margin: 0;
-    padding: 0 25px 28px;
     color: #596773;
     line-height: 1.7;
 }
 
 
 /* =========================================================
-   9. OUR WORK INTRO
+   9. ABOUT PAGE — APPROACH
    ========================================================= */
 
-.work-intro {
+.approach-section {
     padding: 90px 0;
     background: #ffffff;
 }
 
-.work-intro .section-heading {
-    margin-bottom: 0;
-}
-
-.work-intro .section-heading h2 {
-    color: #172b3a;
-}
-
-
-/* =========================================================
-   10. BENEFICIARIES
-   ========================================================= */
-
-.beneficiaries-section {
-    padding: 90px 0;
-    background: #ffffff;
-}
-
-.beneficiary-list {
+.approach-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
 
-.beneficiary-item {
+.approach-card {
     padding: 28px 22px;
-    background: #f7f8f9;
+    background: #ffffff;
     border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(20, 35, 51, 0.07);
+    text-align: center;
     border-top: 4px solid #e59b00;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.beneficiary-item h3 {
+.approach-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(20, 35, 51, 0.11);
+}
+
+.approach-icon {
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #e59b00;
+}
+
+.approach-card h3 {
     margin-bottom: 10px;
     color: #172b3a;
-    font-size: 1.1rem;
 }
 
-.beneficiary-item p {
+.approach-card p {
     margin: 0;
     color: #596773;
     line-height: 1.7;
@@ -560,39 +550,166 @@ textarea {
 
 
 /* =========================================================
-   11. LOCATION
+   10. INCLUSION / COMMUNITY SECTION
    ========================================================= */
 
-.location-section {
+.football-section {
     padding: 90px 0;
     background: #f7f8f9;
 }
 
-.location-content {
-    max-width: 800px;
+.football-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
 }
 
-.location-content h2 {
+.football-content {
+    max-width: 600px;
+}
+
+.football-content h2 {
     margin: 12px 0 18px;
+    font-size: 2.4rem;
+    line-height: 1.2;
     color: #172b3a;
-    font-size: 2.2rem;
-    line-height: 1.25;
 }
 
-.location-content p {
-    max-width: 700px;
-    margin: 0;
+.football-content h2 span {
+    color: #e59b00;
+}
+
+.football-content p {
+    margin-bottom: 18px;
     color: #596773;
     line-height: 1.8;
 }
 
+.football-content .btn {
+    margin-top: 10px;
+}
+
+.football-image {
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.football-image img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
 
 /* =========================================================
-   12. PROJECTS
+   11. PARTNERSHIPS
+   ========================================================= */
+
+.partners-section {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+.partner-card {
+    min-height: 150px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e4e8eb;
+    box-shadow: 0 8px 25px rgba(20, 35, 51, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(20, 35, 51, 0.1);
+}
+
+.partner-card img {
+    display: block;
+    max-width: 85%;
+    max-height: 85px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   12. ABOUT PAGE CTA
+   ========================================================= */
+
+.cta-section {
+    padding: 90px 0;
+    background: #172b3a;
+    color: #ffffff;
+}
+
+.cta-content {
+    max-width: 850px;
+    text-align: center;
+}
+
+.cta-content .section-label {
+    color: #e59b00;
+}
+
+.cta-content h2 {
+    margin: 12px 0 18px;
+    color: #ffffff;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.cta-content h2 span {
+    color: #e59b00;
+}
+
+.cta-content p {
+    max-width: 700px;
+    margin: 0 auto 28px;
+    color: #d7dde1;
+    line-height: 1.8;
+}
+
+.cta-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.cta-actions .btn-secondary {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.cta-actions .btn-secondary:hover {
+    background: #ffffff;
+    color: #172b3a;
+}
+
+
+/* =========================================================
+   13. PROJECTS
    ========================================================= */
 
 .projects-section {
     padding: 90px 0;
+    background: #ffffff;
 }
 
 .projects-grid {
@@ -620,7 +737,7 @@ textarea {
 
 
 /* =========================================================
-   13. IMPACT
+   14. IMPACT
    ========================================================= */
 
 .impact-section {
@@ -654,11 +771,12 @@ textarea {
 
 
 /* =========================================================
-   14. NEWS
+   15. NEWS
    ========================================================= */
 
 .news-section {
     padding: 90px 0;
+    background: #ffffff;
 }
 
 .news-grid {
@@ -696,7 +814,7 @@ textarea {
 
 
 /* =========================================================
-   15. GALLERY
+   16. GALLERY
    ========================================================= */
 
 .gallery-section {
@@ -752,11 +870,12 @@ textarea {
 
 
 /* =========================================================
-   16. CONTACT
+   17. CONTACT
    ========================================================= */
 
 .contact-section {
     padding: 90px 0;
+    background: #ffffff;
 }
 
 .contact-grid {
@@ -848,43 +967,18 @@ textarea {
 
 
 /* =========================================================
-   17. PARTNER
+   18. PARTNER PAGE
    ========================================================= */
 
 .partner-section {
     padding: 90px 0;
+    background: #ffffff;
 }
 
 .partner-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-}
-
-.partner-card {
-    padding: 32px;
-    background: #ffffff;
-    border-radius: 12px;
-    border-top: 4px solid #e59b00;
-    box-shadow: 0 8px 25px rgba(20, 35, 51, 0.08);
-}
-
-.partner-number {
-    display: block;
-    margin-bottom: 18px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #e59b00;
-}
-
-.partner-card h3 {
-    margin-bottom: 12px;
-}
-
-.partner-card p {
-    margin: 0;
-    line-height: 1.7;
 }
 
 .partner-highlight {
@@ -919,7 +1013,7 @@ textarea {
 
 
 /* =========================================================
-   18. FOOTER
+   19. FOOTER
    ========================================================= */
 
 .site-footer {
@@ -999,7 +1093,7 @@ textarea {
 
 
 /* =========================================================
-   19. TABLET
+   20. TABLET
    ========================================================= */
 
 @media (max-width: 1000px) {
@@ -1038,11 +1132,15 @@ textarea {
     .beneficiary-list {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
 /* =========================================================
-   20. MOBILE NAVIGATION
+   21. MOBILE NAVIGATION
    ========================================================= */
 
 @media (max-width: 850px) {
@@ -1070,9 +1168,10 @@ textarea {
 
         padding: 15px 20px;
 
-        background: #ffffff;
+        background: #172b3a;
 
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        box-shadow:
+            0 10px 25px rgba(0, 0, 0, 0.15);
 
         list-style: none;
     }
@@ -1089,31 +1188,31 @@ textarea {
         display: block;
         width: 100%;
         padding: 12px 10px;
-        color: #172b3a !important;
+        color: #ffffff;
     }
 
     .nav-links a:hover,
     .nav-links a.active {
-        color: #e59b00 !important;
+        color: #e59b00;
     }
 
     .nav-links .nav-button {
         margin: 8px 0 0;
         text-align: center;
-        color: #ffffff !important;
-        background: #e59b00;
+        color: #ffffff;
     }
 }
 
 
 /* =========================================================
-   21. MOBILE CONTENT
+   22. MOBILE CONTENT
    ========================================================= */
 
 @media (max-width: 900px) {
 
     .about-grid,
-    .contact-grid {
+    .contact-grid,
+    .football-grid {
         grid-template-columns: 1fr;
         gap: 45px;
     }
@@ -1125,11 +1224,19 @@ textarea {
     .gallery-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+
+    .football-content {
+        max-width: 100%;
+    }
+
+    .football-image {
+        order: 2;
+    }
 }
 
 
 /* =========================================================
-   22. MOBILE — 700PX
+   23. SMALL MOBILE
    ========================================================= */
 
 @media (max-width: 700px) {
@@ -1166,7 +1273,14 @@ textarea {
         padding: 65px 0;
     }
 
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+
     .about-section,
+    .about-preview,
+    .values-section,
+    .approach-section,
     .programs-section,
     .projects-section,
     .impact-section,
@@ -1174,13 +1288,22 @@ textarea {
     .gallery-section,
     .contact-section,
     .partner-section,
-    .work-intro,
-    .beneficiaries-section,
-    .location-section,
-    .about-preview,
-    .values-section,
-    .approach-section {
+    .football-section,
+    .partners-section,
+    .cta-section {
         padding: 65px 0;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-grid {
+        grid-template-columns: 1fr;
     }
 
     .programs-grid,
@@ -1198,28 +1321,29 @@ textarea {
         grid-template-columns: 1fr 1fr;
     }
 
-    .about-image img {
-        height: 320px;
-    }
-
-    .about-highlights {
-        grid-template-columns: 1fr;
-    }
-
-    .values-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .approach-grid {
-        grid-template-columns: 1fr;
-    }
-
     .beneficiary-list {
         grid-template-columns: 1fr;
     }
 
-    .location-content h2 {
-        font-size: 1.9rem;
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-image img {
+        height: 360px;
+    }
+
+    .football-image img {
+        height: 330px;
+    }
+
+    .about-content h2,
+    .football-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-content h2 {
+        font-size: 2.1rem;
     }
 
     .footer-grid {
@@ -1236,7 +1360,7 @@ textarea {
 
 
 /* =========================================================
-   23. SMALL MOBILE
+   24. VERY SMALL MOBILE
    ========================================================= */
 
 @media (max-width: 500px) {
@@ -1259,5 +1383,19 @@ textarea {
 
     .gallery-item img {
         height: 240px;
+    }
+
+    .partners-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-actions {
+        flex-direction: column;
+    }
+
+    .cta-actions .btn {
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
     }
 }
