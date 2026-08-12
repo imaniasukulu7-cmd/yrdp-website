@@ -2,7 +2,6 @@
    YRDP WEBSITE — MAIN STYLESHEET
    ========================================================= */
 
-
 /* =========================================================
    1. RESET
    ========================================================= */
@@ -67,6 +66,7 @@ textarea {
 .section-heading h2 {
     margin: 12px 0;
     font-size: 2.2rem;
+    line-height: 1.25;
 }
 
 .section-heading p {
@@ -94,8 +94,8 @@ textarea {
 
 
 /* =========================================================
-3. HEADER / NAVIGATION
-========================================================= */
+   3. HEADER / NAVIGATION
+   ========================================================= */
 
 .site-header {
     position: relative;
@@ -194,37 +194,8 @@ textarea {
 
 
 /* =========================================================
-4. PAGE HERO
-========================================================= */
-
-.page-hero {
-    padding: 90px 0;
-    background: #172b3a;
-    color: #ffffff;
-}
-
-.page-hero h1 {
-    max-width: 850px;
-    margin: 12px 0 18px;
-    font-size: clamp(2.2rem, 5vw, 4rem);
-    line-height: 1.1;
-    color: #ffffff;
-}
-
-.page-hero p {
-    max-width: 760px;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: #ffffff;
-}
-
-.page-hero .section-tag {
-    color: #e59b00;
-}
-
-/* =========================================================
-4. PAGE HERO
-========================================================= */
+   4. PAGE HERO
+   ========================================================= */
 
 .page-hero {
     padding: 90px 0;
@@ -255,6 +226,78 @@ textarea {
 .page-hero .section-tag {
     color: #e59b00;
 }
+
+
+/* =========================================================
+   5. HOME PAGE HERO
+   ========================================================= */
+
+.hero {
+    width: 100%;
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: #172b3a !important;
+    color: #ffffff !important;
+}
+
+.hero .container {
+    width: min(1180px, 94%);
+    margin: 0 auto;
+}
+
+.hero-container {
+    display: block;
+}
+
+.hero-content {
+    max-width: 720px;
+    padding: 40px 0 50px;
+}
+
+.hero-label {
+    display: block;
+    margin-bottom: 24px;
+    color: #ffffff !important;
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin: 0 0 25px;
+    max-width: 700px;
+    color: #ffffff !important;
+    font-size: clamp(3.5rem, 7vw, 5.2rem);
+    font-weight: 700;
+    line-height: 0.98;
+    letter-spacing: -2px;
+}
+
+.hero h1 span {
+    color: #ffffff !important;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0;
+    color: #ffffff !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+.hero-actions {
+    display: none;
+}
+
+.hero-image {
+    display: none;
+}
+
 
 /* =========================================================
    6. ABOUT
@@ -296,7 +339,111 @@ textarea {
 
 
 /* =========================================================
-   7. PROGRAMS / OUR WORK
+   7. ABOUT PAGE
+   ========================================================= */
+
+.about-preview {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.highlight {
+    padding: 25px;
+    background: #f7f8f9;
+    border-radius: 10px;
+    border-left: 4px solid #e59b00;
+}
+
+.highlight h3 {
+    margin-bottom: 10px;
+    color: #172b3a;
+}
+
+.highlight p {
+    margin: 0;
+    color: #596773;
+    line-height: 1.7;
+}
+
+.values-section {
+    padding: 90px 0;
+    background: #f7f8f9;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.value-card {
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(20, 35, 51, 0.07);
+    border-top: 4px solid #e59b00;
+}
+
+.value-card h3 {
+    margin-bottom: 12px;
+    color: #172b3a;
+}
+
+.value-card p {
+    margin: 0;
+    color: #596773;
+    line-height: 1.7;
+}
+
+.approach-section {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.approach-card {
+    padding: 28px 22px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(20, 35, 51, 0.07);
+    text-align: center;
+    border-top: 4px solid #e59b00;
+}
+
+.approach-icon {
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #e59b00;
+}
+
+.approach-card h3 {
+    margin-bottom: 10px;
+    color: #172b3a;
+}
+
+.approach-card p {
+    margin: 0;
+    color: #596773;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   8. PROGRAMS / OUR WORK
    ========================================================= */
 
 .programs-section {
@@ -311,10 +458,17 @@ textarea {
 }
 
 .program-card {
+    position: relative;
     overflow: hidden;
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(20, 35, 51, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(20, 35, 51, 0.12);
 }
 
 .program-card img {
@@ -328,18 +482,113 @@ textarea {
     padding: 25px;
 }
 
+.program-number {
+    display: block;
+    margin: 22px 25px 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #e59b00;
+}
+
 .program-card h3 {
-    margin-bottom: 10px;
+    margin: 0 25px 10px;
+    color: #172b3a;
+    font-size: 1.25rem;
+    line-height: 1.35;
 }
 
 .program-card p {
+    margin: 0;
+    padding: 0 25px 28px;
     color: #596773;
     line-height: 1.7;
 }
 
 
 /* =========================================================
-   8. PROJECTS
+   9. OUR WORK INTRO
+   ========================================================= */
+
+.work-intro {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.work-intro .section-heading {
+    margin-bottom: 0;
+}
+
+.work-intro .section-heading h2 {
+    color: #172b3a;
+}
+
+
+/* =========================================================
+   10. BENEFICIARIES
+   ========================================================= */
+
+.beneficiaries-section {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.beneficiary-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.beneficiary-item {
+    padding: 28px 22px;
+    background: #f7f8f9;
+    border-radius: 12px;
+    border-top: 4px solid #e59b00;
+}
+
+.beneficiary-item h3 {
+    margin-bottom: 10px;
+    color: #172b3a;
+    font-size: 1.1rem;
+}
+
+.beneficiary-item p {
+    margin: 0;
+    color: #596773;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   11. LOCATION
+   ========================================================= */
+
+.location-section {
+    padding: 90px 0;
+    background: #f7f8f9;
+}
+
+.location-content {
+    max-width: 800px;
+}
+
+.location-content h2 {
+    margin: 12px 0 18px;
+    color: #172b3a;
+    font-size: 2.2rem;
+    line-height: 1.25;
+}
+
+.location-content p {
+    max-width: 700px;
+    margin: 0;
+    color: #596773;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   12. PROJECTS
    ========================================================= */
 
 .projects-section {
@@ -371,7 +620,7 @@ textarea {
 
 
 /* =========================================================
-   9. IMPACT
+   13. IMPACT
    ========================================================= */
 
 .impact-section {
@@ -405,7 +654,7 @@ textarea {
 
 
 /* =========================================================
-   10. NEWS
+   14. NEWS
    ========================================================= */
 
 .news-section {
@@ -447,7 +696,7 @@ textarea {
 
 
 /* =========================================================
-   11. GALLERY
+   15. GALLERY
    ========================================================= */
 
 .gallery-section {
@@ -503,7 +752,7 @@ textarea {
 
 
 /* =========================================================
-   12. CONTACT
+   16. CONTACT
    ========================================================= */
 
 .contact-section {
@@ -599,7 +848,7 @@ textarea {
 
 
 /* =========================================================
-   13. PARTNER
+   17. PARTNER
    ========================================================= */
 
 .partner-section {
@@ -670,7 +919,7 @@ textarea {
 
 
 /* =========================================================
-   14. FOOTER
+   18. FOOTER
    ========================================================= */
 
 .site-footer {
@@ -750,7 +999,7 @@ textarea {
 
 
 /* =========================================================
-   15. TABLET
+   19. TABLET
    ========================================================= */
 
 @media (max-width: 1000px) {
@@ -778,11 +1027,22 @@ textarea {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .approach-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .beneficiary-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 
 /* =========================================================
-   16. MOBILE NAVIGATION
+   20. MOBILE NAVIGATION
    ========================================================= */
 
 @media (max-width: 850px) {
@@ -812,8 +1072,7 @@ textarea {
 
         background: #ffffff;
 
-        box-shadow:
-            0 10px 25px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 
         list-style: none;
     }
@@ -830,18 +1089,25 @@ textarea {
         display: block;
         width: 100%;
         padding: 12px 10px;
+        color: #172b3a !important;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+        color: #e59b00 !important;
     }
 
     .nav-links .nav-button {
         margin: 8px 0 0;
         text-align: center;
+        color: #ffffff !important;
+        background: #e59b00;
     }
-
 }
 
 
 /* =========================================================
-   17. MOBILE CONTENT
+   21. MOBILE CONTENT
    ========================================================= */
 
 @media (max-width: 900px) {
@@ -859,211 +1125,11 @@ textarea {
     .gallery-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-
-}
-
-
-@media (max-width: 700px) {
-
-    .hero {
-        min-height: 520px;
-    }
-
-    .page-hero {
-        padding: 65px 0;
-    }
-
-    .about-section,
-    .programs-section,
-    .projects-section,
-    .impact-section,
-    .news-section,
-    .gallery-section,
-    .contact-section,
-    .partner-section {
-        padding: 65px 0;
-    }
-
-    .programs-grid,
-    .projects-grid,
-    .news-grid,
-    .partner-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .impact-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .about-image img {
-        height: 320px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-bottom-content {
-        flex-direction: column;
-        justify-content: center;
-        padding: 20px 0;
-        text-align: center;
-    }
-
-}
-
-
-@media (max-width: 500px) {
-
-    .container {
-        width: 90%;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
-    .impact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-form-wrapper {
-        padding: 25px 20px;
-    }
-
-    .gallery-item img {
-        height: 240px;
-    }
-
-}
-/* =========================================================
-   YRDP HOME PAGE HERO FIX
-   ========================================================= */
-
-body {
-    background: #ffffff;
-}
-
-.site-header {
-    background: #172b3a !important;
-}
-
-.navbar {
-    background: #172b3a !important;
-}
-
-.logo {
-    color: #ffffff !important;
-}
-
-.nav-links a {
-    color: #ffffff !important;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-    color: #e59b00 !important;
-}
-
-.menu-toggle span {
-    background: #ffffff !important;
-}
-
-/* Home page main hero */
-section.hero {
-    background: #172b3a !important;
-    color: #ffffff !important;
-}
-
-section.hero h1 {
-    color: #ffffff !important;
-}
-
-section.hero h1 span {
-    color: #e59b00 !important;
-}
-
-section.hero p {
-    color: #ffffff !important;
-}
-/* =========================================================
-   YRDP HOME HERO — REFERENCE DESIGN
-   ========================================================= */
-
-.hero {
-    width: 100%;
-    min-height: 620px;
-    background: #172b3a !important;
-    color: #ffffff !important;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero .container {
-    width: min(1180px, 94%);
-    margin: 0 auto;
-}
-
-.hero-container {
-    display: block;
-}
-
-.hero-content {
-    max-width: 720px;
-    padding: 40px 0 50px;
-}
-
-.hero-label {
-    display: block;
-    margin-bottom: 24px;
-    color: #ffffff !important;
-    font-size: 0.9rem;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-}
-
-.hero h1 {
-    margin: 0 0 25px;
-    max-width: 700px;
-    color: #ffffff !important;
-    font-size: clamp(3.5rem, 7vw, 5.2rem);
-    font-weight: 700;
-    line-height: 0.98;
-    letter-spacing: -2px;
-}
-
-.hero h1 span {
-    color: #ffffff !important;
-}
-
-.hero p {
-    max-width: 700px;
-    margin: 0;
-    color: #ffffff !important;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.9;
-}
-
-.hero-actions {
-    display: none;
-}
-
-/* Hide the image on the hero so it matches the reference */
-.hero-image {
-    display: none;
 }
 
 
 /* =========================================================
-   HOME HERO — MOBILE
+   22. MOBILE — 700PX
    ========================================================= */
 
 @media (max-width: 700px) {
@@ -1095,136 +1161,46 @@ section.hero p {
         font-size: 0.95rem;
         line-height: 1.75;
     }
-}
-/* =========================================================
-   ABOUT PAGE — ADDITIONAL STYLING
-   ========================================================= */
 
-/* About preview */
-
-.about-preview {
-    padding: 90px 0;
-    background: #ffffff;
-}
-
-.about-highlights {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 30px;
-}
-
-.highlight {
-    padding: 25px;
-    background: #f7f8f9;
-    border-radius: 10px;
-    border-left: 4px solid #e59b00;
-}
-
-.highlight h3 {
-    margin-bottom: 10px;
-    color: #172b3a;
-}
-
-.highlight p {
-    margin: 0;
-    color: #596773;
-    line-height: 1.7;
-}
-
-
-/* Core values */
-
-.values-section {
-    padding: 90px 0;
-    background: #f7f8f9;
-}
-
-.values-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.value-card {
-    padding: 30px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(20, 35, 51, 0.07);
-    border-top: 4px solid #e59b00;
-}
-
-.value-card h3 {
-    margin-bottom: 12px;
-    color: #172b3a;
-}
-
-.value-card p {
-    margin: 0;
-    color: #596773;
-    line-height: 1.7;
-}
-
-
-/* Approach cards */
-
-.approach-section {
-    padding: 90px 0;
-    background: #ffffff;
-}
-
-.approach-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-}
-
-.approach-card {
-    padding: 28px 22px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(20, 35, 51, 0.07);
-    text-align: center;
-    border-top: 4px solid #e59b00;
-}
-
-.approach-icon {
-    margin-bottom: 15px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #e59b00;
-}
-
-.approach-card h3 {
-    margin-bottom: 10px;
-    color: #172b3a;
-}
-
-.approach-card p {
-    margin: 0;
-    color: #596773;
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   ABOUT PAGE — RESPONSIVE
-   ========================================================= */
-
-@media (max-width: 1000px) {
-
-    .approach-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .page-hero {
+        padding: 65px 0;
     }
 
-    .values-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .about-section,
+    .programs-section,
+    .projects-section,
+    .impact-section,
+    .news-section,
+    .gallery-section,
+    .contact-section,
+    .partner-section,
+    .work-intro,
+    .beneficiaries-section,
+    .location-section,
+    .about-preview,
+    .values-section,
+    .approach-section {
+        padding: 65px 0;
     }
 
-}
+    .programs-grid,
+    .projects-grid,
+    .news-grid,
+    .partner-grid {
+        grid-template-columns: 1fr;
+    }
 
-@media (max-width: 700px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-image img {
+        height: 320px;
+    }
 
     .about-highlights {
         grid-template-columns: 1fr;
@@ -1238,153 +1214,6 @@ section.hero p {
         grid-template-columns: 1fr;
     }
 
-}
-/* =========================================================
-   OUR WORK PAGE — ADDITIONAL STYLING
-========================================================= */
-
-/* Our Work introduction */
-
-.work-intro {
-    padding: 90px 0;
-    background: #ffffff;
-}
-
-.work-intro .section-heading {
-    margin-bottom: 0;
-}
-
-.work-intro .section-heading h2 {
-    color: #172b3a;
-}
-
-
-/* Program cards */
-
-.program-card {
-    position: relative;
-    overflow: hidden;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(20, 35, 51, 0.08);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.program-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 14px 32px rgba(20, 35, 51, 0.12);
-}
-
-.program-card img {
-    display: block;
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-}
-
-.program-number {
-    display: block;
-    margin: 22px 25px 8px;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #e59b00;
-}
-
-.program-card h3 {
-    margin: 0 25px 10px;
-    color: #172b3a;
-    font-size: 1.25rem;
-    line-height: 1.35;
-}
-
-.program-card p {
-    margin: 0;
-    padding: 0 25px 28px;
-    color: #596773;
-    line-height: 1.7;
-}
-
-
-/* Who We Work With */
-
-.beneficiaries-section {
-    padding: 90px 0;
-    background: #ffffff;
-}
-
-.beneficiary-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.beneficiary-item {
-    padding: 28px 22px;
-    background: #f7f8f9;
-    border-radius: 12px;
-    border-top: 4px solid #e59b00;
-}
-
-.beneficiary-item h3 {
-    margin-bottom: 10px;
-    color: #172b3a;
-    font-size: 1.1rem;
-}
-
-.beneficiary-item p {
-    margin: 0;
-    color: #596773;
-    line-height: 1.7;
-}
-
-
-/* Where We Work */
-
-.location-section {
-    padding: 90px 0;
-    background: #f7f8f9;
-}
-
-.location-content {
-    max-width: 800px;
-}
-
-.location-content h2 {
-    margin: 12px 0 18px;
-    color: #172b3a;
-    font-size: 2.2rem;
-    line-height: 1.25;
-}
-
-.location-content p {
-    max-width: 700px;
-    margin: 0;
-    color: #596773;
-    line-height: 1.8;
-}
-
-
-/* =========================================================
-   OUR WORK — RESPONSIVE
-========================================================= */
-
-@media (max-width: 1000px) {
-
-    .beneficiary-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media (max-width: 700px) {
-
-    .work-intro,
-    .beneficiaries-section,
-    .location-section {
-        padding: 65px 0;
-    }
-
     .beneficiary-list {
         grid-template-columns: 1fr;
     }
@@ -1393,4 +1222,42 @@ section.hero p {
         font-size: 1.9rem;
     }
 
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 0;
+        text-align: center;
+    }
+}
+
+
+/* =========================================================
+   23. SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 500px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-wrapper {
+        padding: 25px 20px;
+    }
+
+    .gallery-item img {
+        height: 240px;
+    }
 }
