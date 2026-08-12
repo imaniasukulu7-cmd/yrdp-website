@@ -1861,3 +1861,48 @@ p {
     }
 
 }
+/* HOME MOBILE NAVIGATION FIX */
+
+@media (max-width: 900px) {
+
+    .nav-container {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        background: #ffffff;
+        z-index: 1000;
+        box-sizing: border-box;
+    }
+
+    .nav-links.active li {
+        width: 100%;
+    }
+
+    .nav-links.active a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+    }
+
+}
