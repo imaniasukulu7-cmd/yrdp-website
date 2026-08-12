@@ -1,10 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-
-    /* ==========================================
-       MOBILE NAVIGATION
-       ========================================== */
-
     const menuToggle =
         document.getElementById("menu-toggle");
 
