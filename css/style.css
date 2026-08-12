@@ -94,19 +94,19 @@ textarea {
 
 
 /* =========================================================
-   3. HEADER / NAVIGATION
-   ========================================================= */
+3. HEADER / NAVIGATION
+========================================================= */
 
 .site-header {
     position: relative;
     z-index: 1000;
-    background: #ffffff;
+    background: #172b3a;
 }
 
 .navbar {
     width: 100%;
-    background: #ffffff;
-    border-bottom: 1px solid #eeeeee;
+    background: #172b3a;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .nav-container {
@@ -124,7 +124,7 @@ textarea {
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 800;
-    color: #172b3a;
+    color: #ffffff;
 }
 
 .logo img {
@@ -151,7 +151,7 @@ textarea {
     display: block;
     width: 25px;
     height: 3px;
-    background: #172b3a;
+    background: #ffffff;
     border-radius: 3px;
 }
 
@@ -160,6 +160,8 @@ textarea {
     align-items: center;
     gap: 5px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
@@ -168,7 +170,7 @@ textarea {
     text-decoration: none;
     font-size: 0.92rem;
     font-weight: 600;
-    color: #172b3a;
+    color: #ffffff;
     border-radius: 5px;
     transition: 0.25s ease;
 }
