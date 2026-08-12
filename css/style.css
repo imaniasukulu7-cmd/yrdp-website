@@ -1906,3 +1906,59 @@ p {
     }
 
 }
+/* ==========================================
+   MOBILE MENU FIX
+   ========================================== */
+
+@media (max-width: 900px) {
+
+    .nav-container {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        padding: 20px;
+
+        background: #ffffff;
+
+        box-sizing: border-box;
+
+        z-index: 1000;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+    }
+
+    .nav-links.active li {
+        width: 100%;
+    }
+
+    .nav-links.active a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+    }
+
+}
