@@ -4,12 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
        MOBILE NAVIGATION
        ========================================== */
 
-    const menuToggle =
-        document.getElementById("menu-toggle");
-
-    const navLinks =
-        document.getElementById("nav-links");
-
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
 
     if (menuToggle && navLinks) {
 
@@ -17,22 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
             navLinks.classList.toggle("active");
 
-            const isOpen =
-                navLinks.classList.contains("active");
+            const isOpen = navLinks.classList.contains("active");
 
             menuToggle.setAttribute(
                 "aria-expanded",
-                isOpen
+                isOpen ? "true" : "false"
             );
 
         });
 
 
-        /* Close menu after clicking a link */
+        /* Close menu after clicking a navigation link */
 
-        const links =
-            navLinks.querySelectorAll("a");
-
+        const links = navLinks.querySelectorAll("a");
 
         links.forEach(function (link) {
 
@@ -59,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const yearElements =
         document.querySelectorAll(".current-year");
 
-
     yearElements.forEach(function (element) {
 
         element.textContent =
@@ -73,10 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
        ========================================== */
 
     const anchorLinks =
-        document.querySelectorAll(
-            'a[href^="#"]'
-        );
-
+        document.querySelectorAll('a[href^="#"]');
 
     anchorLinks.forEach(function (link) {
 
@@ -85,15 +74,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetId =
                 this.getAttribute("href");
 
-
-            if (
-                targetId &&
-                targetId !== "#"
-            ) {
+            if (targetId && targetId !== "#") {
 
                 const target =
                     document.querySelector(targetId);
-
 
                 if (target) {
 
