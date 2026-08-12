@@ -192,12 +192,13 @@ textarea {
 
 
 /* =========================================================
-   4. PAGE HERO
-   ========================================================= */
+4. PAGE HERO
+========================================================= */
 
 .page-hero {
     padding: 90px 0;
-    background: #f7f8f9;
+    background: #172b3a;
+    color: #ffffff;
 }
 
 .page-hero h1 {
@@ -205,15 +206,19 @@ textarea {
     margin: 12px 0 18px;
     font-size: clamp(2.2rem, 5vw, 4rem);
     line-height: 1.1;
+    color: #ffffff;
 }
 
 .page-hero p {
     max-width: 760px;
     font-size: 1.05rem;
     line-height: 1.8;
-    color: #596773;
+    color: #ffffff;
 }
 
+.page-hero .section-tag {
+    color: #e59b00;
+}
 
 /* =========================================================
    5. HOME HERO
